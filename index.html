@@ -3,22 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kalkulator Umur</title>
+    <title>Kalkulator Umur Keren</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
         <h1>Kalkulator Umur</h1>
-        <label for="birthdate">Masukkan Tanggal Lahir:</label>
-        <input type="date" id="birthdate" name="birthdate">
-        <button onclick="calculateAge()">Hitung Umur</button>
-        <div id="result">
-            <p><span id="years">0</span> Tahun</p>
-            <p><span id="months">0</span> Bulan</p>
-            <p><span id="days">0</span> Hari</p>
-            <p><span id="hours">0</span> Jam</p>
-            <p><span id="minutes">0</span> Menit</p>
-            <p><span id="seconds">0</span> Detik</p>
+        <p class="subtitle">Masukkan tanggal lahir Anda dan temukan usia Anda!</p>
+        <div class="input-group">
+            <label for="birthdate">Tanggal Lahir:</label>
+            <input type="date" id="birthdate" name="birthdate" class="modern-input">
+        </div>
+        <button class="calculate-btn" onclick="calculateAge()">Hitung Umur</button>
+        <div class="result-container">
+            <div class="result-box">
+                <span id="years">0</span>
+                <p>Tahun</p>
+            </div>
+            <div class="result-box">
+                <span id="months">0</span>
+                <p>Bulan</p>
+            </div>
+            <div class="result-box">
+                <span id="days">0</span>
+                <p>Hari</p>
+            </div>
+            <div class="result-box">
+                <span id="hours">0</span>
+                <p>Jam</p>
+            </div>
+            <div class="result-box">
+                <span id="minutes">0</span>
+                <p>Menit</p>
+            </div>
+            <div class="result-box">
+                <span id="seconds">0</span>
+                <p>Detik</p>
+            </div>
         </div>
     </div>
     <script src="script.js"></script>
